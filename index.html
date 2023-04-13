@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>MyBlog | Home</title>
+
+</head>
+
+<body style="background-color: whitesmoke;">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">MyBLog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Topics
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Programming</a>
+                        <a class="dropdown-item" href="#">Technology</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">JavaScript</a>
+                        <a class="dropdown-item" href="#">Web Development</a>
+                        <a class="dropdown-item" href="#">Android Development</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">Give feedback</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#LoginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#SignUpModal">SignUp</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Button trigger modal -->
+  
+  <!-- Login Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModal">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+              <label for="userLogin">username id</label>
+              <input type="text" class="form-control" id="usid" placeholder="username/gmail" required>
+            </div>
+            <div class="form-group">
+                <label for="PwdLogin">Password</label>
+                <input type="password" class="form-control" id="pwdlg" placeholder="Password" required>
+              </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="SignUpModal">SignUp</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="userSignUp">Username</label>
+                    <input type="text" class="form-control" id="sinid" placeholder="username/gmail" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="PwdSignUp">Password</label>
+                      <input type="password" class="form-control" id="pwdsin" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="RePwdSignUp">Confirm Password</label>
+                        <input type="password" class="form-control" id="pwdsin" placeholder="Re-enter your Password" required>
+                      </div>
+    
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Create Account</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- <div class="card" style="width: 19rem;">
+        <img src="https://source.unsplash.com/300x300/?code,technology" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card text-center">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer text-muted">
+          2 days ago
+        </div>
+      </div> -->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/1400x300/?applelaptop,technology" class="d-block w-100"
+                    style=" filter: blur(8px); -webkit-filter: blur(2px);" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to MyBlog</h2>
+                    <p>Technology Posts & News, Development & Training</p>
+                    <button class="btn btn-primary">Web Dev</button>
+                    <button class="btn btn-danger">App Dev</button>
+                    <button class="btn btn-success">Desktop Dev</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1400x300/?code,technology" class="d-block w-100"
+                    style=" filter: blur(8px); -webkit-filter: blur(2px);" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>MyBlog Is Best Coding Blog</h2>
+                    <p>Technology Posts & News, Development & Training</p>
+                    <button class="btn btn-primary">Web Dev</button>
+                    <button class="btn btn-danger">App Dev</button>
+                    <button class="btn btn-success">Desktop Dev</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1400x300/?tab,technology" class="d-block w-100"
+                    style=" filter: blur(8px); -webkit-filter: blur(2px);" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>MyBlog Is An Award Wining Blog</h2>
+                    <p>Technology Posts & News, Development & Training</p>
+                    <button class="btn btn-primary">Web Dev</button>
+                    <button class="btn btn-danger">App Dev</button>
+                    <button class="btn btn-success">Desktop Dev</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+
+
+
+
+
+    <!-- my-4, ml-4, mx-4 mr-4  this is used for margin like left right top bottom-->
+    <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Programming World</strong>
+                        <h3 class="mb-0">Java Language</h3>
+                        <div class="mb-1 text-muted">April 5</div>
+                        <p class="card-text mb-auto">This is a wider used programing Language.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250"
+                            src="https://cdn.worldvectorlogo.com/logos/java.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Web Design</strong>
+                        <h3 class="mb-0">Html Language</h3>
+                        <div class="mb-1 text-muted">Feb 02</div>
+                        <p class="mb-auto">This is a basic structural Language of Web Development.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block my-2">
+                        <img class="bd-placeholder-img" width="200" height="250"
+                            src="https://seeklogo.com/images/H/html5-without-wordmark-color-logo-14D252D878-seeklogo.com.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Programming World</strong>
+                        <h3 class="mb-0">C++ Language</h3>
+                        <div class="mb-1 text-muted">May 5</div>
+                        <p class="card-text mb-auto">Popular programing Language.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="210" height="250"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Web Design</strong>
+                        <h3 class="mb-0">JavaScript Language</h3>
+                        <div class="mb-1 text-muted">March 02</div>
+                        <p class="mb-auto">This will provide a functionality to Web Apps.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block my-2">
+                        <img class="bd-placeholder-img" width="210" height="250"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row featurette d-flex align-items-center justify-content-center border">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">This Blog is very Intresting and helpful for CSE Students. <span
+                        class="text-muted">It'll help you in some area's of your study.</span></h2>
+                <p class="lead">Some great contents for the studens are available here.Some exciting proojects also
+                    available here.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="https://source.unsplash.com/300x300/?business" alt="">
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+
+
+
+
+
+
+
+    <div class="container-fluid d-flex justify-content-center align-items-center my-4 bg-dark" style="color: white;">
+        <footer class="blog-footer">
+            <p>Blog template built for <a href="index.html">studens</a> by <a
+                    href="https://github.com/itsjatinmishra">@github</a>.</p>
+            <p>
+                <a href="index.html">Back to top</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
